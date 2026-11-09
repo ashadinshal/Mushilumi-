@@ -1,0 +1,6 @@
+{
+  "name": "MoschiLumii — Cute Finds, Happy Hearts ♡",
+  "description": "Premium kawaii shopping destination for handmade crochet flowers, adorable plushies, baby rompers, couple gifts, and heartfelt surprises.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

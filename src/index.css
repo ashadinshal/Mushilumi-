@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Quicksand", "Plus Jakarta Sans", sans-serif;
+  --font-fredoka: "Quicksand", "Plus Jakarta Sans", sans-serif;
+  --font-nunito: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-cream: #FAF7F2;
+  --color-blush: #FBF0EB;
+  --color-dusty-rose: #C97A91;
+  --color-soft-rose: #E6AAB9;
+
+  /* Sophisticated, cohesive chocolate & mocha shades with reduced contrast */
+  --color-deep-chocolate: #4A3B36;
+  --color-warm-cocoa: #76605B;
+  --color-soft-cocoa: #8F7872;
+  --color-muted-cocoa: #A8958F;
+}
+
+@layer base {
+  body {
+    background-color: #FAF7F2;
+    color: #4A3B36;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.6;
+  }
+
+  /* Refined, cohesive typography scale with reduced contrast */
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Quicksand', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    color: #4A3B36;
+  }
+}
+
+/* Subtle, calm micro-interactions */
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-float {
+  animation: gentle-float 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: gentle-float 6s ease-in-out 2s infinite;
+}
+
+/* Clean minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E6D2CC;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C97A91;
+}
